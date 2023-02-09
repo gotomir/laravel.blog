@@ -29,7 +29,7 @@ class Post extends Model
         return $this->belongsTo(Category::class);
     }
 
-    public function sluggable()
+    public function sluggable() :array
     {
         return [
             'slug' => [

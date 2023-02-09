@@ -19,7 +19,7 @@ class Category extends Model
         return $this->hasMany(Post::class);
     }
 
-    public function sluggable()
+    public function sluggable() :array
     {
         return [
             'slug' => [
